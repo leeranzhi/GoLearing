@@ -2,7 +2,6 @@ package main
 
 import (
 	"fmt"
-	"strings"
 )
 
 //寻找最长不含有重复字符的字串
@@ -39,5 +38,4 @@ func main() {
 	fmt.Println(lengthOfNonRepeatingSubStr("这里是慕课网"))
 	fmt.Println(lengthOfNonRepeatingSubStr("一二三二一"))
 
-	strings.Contains()
 }

@@ -8,7 +8,7 @@ import (
 func main() {
 	//每个中文占3个字节
 	//其他的占1个字节
-	s := "Yes这里是慕课网" //UTF-8
+	s := "Yes这里是慕课网！！" //UTF-8
 	fmt.Println(s)
 	fmt.Println(len(s))
 
@@ -20,7 +20,7 @@ func main() {
 		fmt.Printf("%X ", b)
 	}
 	fmt.Println()
-
+	
 	for i, ch := range s { //ch is a rune
 		fmt.Printf("(%d %X)", i, ch)
 	}
@@ -36,7 +36,7 @@ func main() {
 		fmt.Printf("%c ", ch)
 	}
 	fmt.Println()
-
+	
 	for i, ch := range []rune(s) {
 		fmt.Printf("(%d %c)", i, ch)
 	}
