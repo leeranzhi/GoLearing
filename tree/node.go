@@ -9,6 +9,7 @@ type treeNode struct {
 	left, right *treeNode
 }
 
+//为结构体定义方法
 //值传递
 func (node treeNode) print() {
 	fmt.Println(node.value)
@@ -19,11 +20,23 @@ func (node treeNode) print() {
 //	node.value = value
 //}
 //编译器自动识别都地址的值或者指针
-//指针接收者
+//指针作为方法的接收者
 func (node *treeNode) setValue(value int) {
+	if node == nil {
+		fmt.Println("Setting value to nil node")
+		return
+	}
 	node.value = value
 }
 
+func (node *treeNode) traverse() {
+	if node == nil {
+		return
+	}
+	node.left.traverse()
+	node.print()
+	node.right.traverse()
+}
 
 //自定义工厂函数
 func createNode(testValue int) *treeNode {
@@ -48,9 +61,12 @@ func main() {
 	//	{6, nil, &root},
 	//}
 	//fmt.Println(nodes)
-	root.print()
+	//root.print()
 	root.right.left.setValue(4)
-	root.right.left.print()
-	fmt.Println()
+
+	root.traverse()
+
+	//root.right.left.print()
+	//fmt.Println()
 
 }
