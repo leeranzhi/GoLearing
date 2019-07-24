@@ -4,69 +4,69 @@ import "fmt"
 
 //结构体
 //Go中只有封装，没有继承和多态
-type treeNode struct {
-	value       int
-	left, right *treeNode
+type Node struct {
+	Value       int
+	Left, Right *Node
 }
 
 //为结构体定义方法
 //值传递
-func (node treeNode) print() {
-	fmt.Println(node.value)
+func (node Node) Print() {
+	fmt.Println(node.Value)
 }
 
 //值传递
-//func (node treeNode) setValue(value int) {
-//	node.value = value
+//func (node Node) SetValue(Value int) {
+//	node.Value = Value
 //}
 //编译器自动识别都地址的值或者指针
 //指针作为方法的接收者
-func (node *treeNode) setValue(value int) {
+func (node *Node) SetValue(value int) {
 	if node == nil {
-		fmt.Println("Setting value to nil node")
+		fmt.Println("Setting Value to nil node")
 		return
 	}
-	node.value = value
+	node.Value = value
 }
 
-func (node *treeNode) traverse() {
+func (node *Node) Traverse() {
 	if node == nil {
 		return
 	}
-	node.left.traverse()
-	node.print()
-	node.right.traverse()
+	node.Left.Traverse()
+	node.Print()
+	node.Right.Traverse()
 }
 
 //自定义工厂函数
-func createNode(testValue int) *treeNode {
+func CreateNode(testValue int) *Node {
 	//返回的是局部变量的地址
 	//此处对象分配在堆上内存，参与垃圾回收
-	return &treeNode{value: testValue}
+	return &Node{Value: testValue}
 }
 
-func main() {
-	//结构体的实例
-	var root treeNode
-
-	root = treeNode{value: 3}
-	root.left = &treeNode{}
-	root.right = &treeNode{5, nil, nil}
-	root.right.left = new(treeNode)
-	root.left.right = createNode(2)
-
-	//nodes := []treeNode{
-	//	{value: 3},
-	//	{},
-	//	{6, nil, &root},
-	//}
-	//fmt.Println(nodes)
-	//root.print()
-	root.right.left.setValue(4)
-
-	root.traverse()
-
-	//root.right.left.print()
-	//fmt.Println()
-
-}
+//func main() {
+//	//结构体的实例
+//	var root Node
+//
+//	root = Node{Value: 3}
+//	root.Left = &Node{}
+//	root.Right = &Node{5, nil, nil}
+//	root.Right.Left = new(Node)
+//	root.Left.Right = CreateNode(2)
+//
+//	//nodes := []Node{
+//	//	{Value: 3},
+//	//	{},
+//	//	{6, nil, &root},
+//	//}
+//	//fmt.Println(nodes)
+//	//root.print()
+//	root.Right.Left.SetValue(4)
+//
+//	root.Traverse()
+//
+//	//root.Right.Left.print()
+//	//fmt.Println()
+//
+//}
