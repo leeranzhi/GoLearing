@@ -20,12 +20,11 @@ func main() {
 		fmt.Printf("%X ", b)
 	}
 	fmt.Println()
-	
+
 	for i, ch := range s { //ch is a rune
 		fmt.Printf("(%d %X)", i, ch)
 	}
 	fmt.Println()
-
 
 	//使用utf8.RuneCountInString获得字符的数量
 	fmt.Println("Rune count:", utf8.RuneCountInString(s))
@@ -36,7 +35,7 @@ func main() {
 		fmt.Printf("%c ", ch)
 	}
 	fmt.Println()
-	
+
 	for i, ch := range []rune(s) {
 		fmt.Printf("(%d %c)", i, ch)
 	}

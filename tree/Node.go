@@ -1,4 +1,4 @@
-package main
+package tree
 
 import "fmt"
 
@@ -29,14 +29,14 @@ func (node *Node) SetValue(value int) {
 	node.Value = value
 }
 
-func (node *Node) Traverse() {
-	if node == nil {
-		return
-	}
-	node.Left.Traverse()
-	node.Print()
-	node.Right.Traverse()
-}
+//func (node *Node) Traverse() {
+//	if node == nil {
+//		return
+//	}
+//	node.Left.Traverse()
+//	node.Print()
+//	node.Right.Traverse()
+//}
 
 //自定义工厂函数
 func CreateNode(testValue int) *Node {
@@ -45,28 +45,28 @@ func CreateNode(testValue int) *Node {
 	return &Node{Value: testValue}
 }
 
-//func main() {
-//	//结构体的实例
-//	var root Node
-//
-//	root = Node{Value: 3}
-//	root.Left = &Node{}
-//	root.Right = &Node{5, nil, nil}
-//	root.Right.Left = new(Node)
-//	root.Left.Right = CreateNode(2)
-//
-//	//nodes := []Node{
-//	//	{Value: 3},
-//	//	{},
-//	//	{6, nil, &root},
-//	//}
-//	//fmt.Println(nodes)
-//	//root.print()
-//	root.Right.Left.SetValue(4)
-//
-//	root.Traverse()
-//
-//	//root.Right.Left.print()
-//	//fmt.Println()
-//
-//}
+func main() {
+	//结构体的实例
+	var root Node
+
+	root = Node{Value: 3}
+	root.Left = &Node{}
+	root.Right = &Node{5, nil, nil}
+	root.Right.Left = new(Node)
+	root.Left.Right = CreateNode(2)
+
+	//nodes := []Node{
+	//	{Value: 3},
+	//	{},
+	//	{6, nil, &root},
+	//}
+	//fmt.Println(nodes)
+	//root.print()
+	root.Right.Left.SetValue(4)
+
+	root.Traverse()
+
+	//root.Right.Left.print()
+	//fmt.Println()
+
+}
