@@ -2,15 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="065b8b84-9109-4da6-98c7-b11ce58dfc5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/queue/entry/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/queue/queue.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree/entry/entry.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tree/traverse.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retriever/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retriever/mock/mockretriever.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/retriever/real/Retriever.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/basic.go" beforeDir="false" afterPath="$PROJECT_DIR$/basic.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/strings.go" beforeDir="false" afterPath="$PROJECT_DIR$/strings.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/entry.go" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tree/node.go" beforeDir="false" afterPath="$PROJECT_DIR$/tree/Node.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -96,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build learnGo/queue/entry">
+  <component name="RunManager" selected="Go Build.go build learnGo/retriever">
     <configuration name="go build entry.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="learnGo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -121,12 +116,30 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build learnGo" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
+      <module name="learnGo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/sliceops.go" />
+      <package value="learnGo" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build learnGo/queue/entry" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learnGo" />
       <working_directory value="$PROJECT_DIR$" />
       <kind value="PACKAGE" />
       <filePath value="$PROJECT_DIR$/queue/entry/main.go" />
       <package value="learnGo/queue/entry" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build learnGo/retriever" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learnGo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/retriever/main.go" />
+      <package value="learnGo/retriever" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -146,16 +159,9 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build strings.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learnGo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/strings.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build learnGo/retriever" />
         <item itemvalue="Go Build.go build learnGo/queue/entry" />
         <item itemvalue="Go Build.go build entry.go (2)" />
         <item itemvalue="Go Build.go build maps.go" />
@@ -194,7 +200,9 @@
       <workItem from="1564075049576" duration="114000" />
       <workItem from="1564330412882" duration="865000" />
       <workItem from="1564411641534" duration="648000" />
-      <workItem from="1564412802416" duration="2397000" />
+      <workItem from="1564412802416" duration="3163000" />
+      <workItem from="1564501892031" duration="216000" />
+      <workItem from="1564502126506" duration="3696000" />
     </task>
     <task id="LOCAL-00001" summary="添加值传递和指针方法接收的不同.">
       <created>1563898777079</created>
