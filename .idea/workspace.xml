@@ -2,10 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="065b8b84-9109-4da6-98c7-b11ce58dfc5c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/retriever/main.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retriever/mock/mockretriever.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/retriever/real/Retriever.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/queue/queue.go" beforeDir="false" afterPath="$PROJECT_DIR$/queue/queue.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retriever/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/retriever/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/retriever/real/Retriever.go" beforeDir="false" afterPath="$PROJECT_DIR$/retriever/real/Retriever.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build learnGo/retriever">
+  <component name="RunManager" selected="Go Build.go build learnGo/queue/entry">
     <configuration name="go build entry.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="learnGo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -161,8 +161,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Go Build.go build learnGo/retriever" />
         <item itemvalue="Go Build.go build learnGo/queue/entry" />
+        <item itemvalue="Go Build.go build learnGo/retriever" />
         <item itemvalue="Go Build.go build entry.go (2)" />
         <item itemvalue="Go Build.go build maps.go" />
         <item itemvalue="Go Build.go build nonrepeating.go" />
@@ -202,7 +202,8 @@
       <workItem from="1564411641534" duration="648000" />
       <workItem from="1564412802416" duration="3163000" />
       <workItem from="1564501892031" duration="216000" />
-      <workItem from="1564502126506" duration="3696000" />
+      <workItem from="1564502126506" duration="3733000" />
+      <workItem from="1564672642630" duration="2232000" />
     </task>
     <task id="LOCAL-00001" summary="添加值传递和指针方法接收的不同.">
       <created>1563898777079</created>
@@ -211,7 +212,14 @@
       <option name="project" value="LOCAL" />
       <updated>1563898777079</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="接口的定义与实现。">
+      <created>1564505861526</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1564505861526</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -262,6 +270,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="添加值传递和指针方法接收的不同." />
-    <option name="LAST_COMMIT_MESSAGE" value="添加值传递和指针方法接收的不同." />
+    <MESSAGE value="接口的定义与实现。" />
+    <option name="LAST_COMMIT_MESSAGE" value="接口的定义与实现。" />
   </component>
 </project>
