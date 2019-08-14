@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="065b8b84-9109-4da6-98c7-b11ce58dfc5c" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/loop.go" beforeDir="false" afterPath="$PROJECT_DIR$/loop.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/retriever/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/retriever/main.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/retriever/mock/mockretriever.go" beforeDir="false" afterPath="$PROJECT_DIR$/retriever/mock/mockretriever.go" afterDir="false" />
     </list>
@@ -90,7 +91,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build learnGo/retriever">
+  <component name="RunManager" selected="Go Build.go build learnGo (1)">
     <configuration name="go build entry.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="learnGo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -112,6 +113,15 @@
       <working_directory value="$PROJECT_DIR$" />
       <kind value="FILE" />
       <filePath value="$PROJECT_DIR$/tree/entry.go" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build learnGo (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learnGo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="FILE" />
+      <filePath value="$PROJECT_DIR$/loop.go" />
+      <package value="learnGo" />
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
@@ -150,21 +160,13 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build nonrepeating.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learnGo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/nonrepeating.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build learnGo (1)" />
         <item itemvalue="Go Build.go build learnGo/retriever" />
         <item itemvalue="Go Build.go build learnGo/queue/entry" />
         <item itemvalue="Go Build.go build entry.go (2)" />
         <item itemvalue="Go Build.go build maps.go" />
-        <item itemvalue="Go Build.go build nonrepeating.go" />
       </list>
     </recent_temporary>
   </component>
@@ -203,7 +205,8 @@
       <workItem from="1564501892031" duration="216000" />
       <workItem from="1564502126506" duration="3733000" />
       <workItem from="1564672642630" duration="2314000" />
-      <workItem from="1564932191166" duration="1166000" />
+      <workItem from="1564932191166" duration="1964000" />
+      <workItem from="1565795598889" duration="2268000" />
     </task>
     <task id="LOCAL-00001" summary="添加值传递和指针方法接收的不同.">
       <created>1563898777079</created>

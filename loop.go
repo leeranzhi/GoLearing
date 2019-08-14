@@ -3,8 +3,10 @@ package main
 import (
 	"bufio"
 	"fmt"
+	"io"
 	"os"
 	"strconv"
+	"strings"
 )
 
 //将整数转为二进制
@@ -52,6 +54,20 @@ func main() {
 	)
 
 	readFile("abc.txt")
-	forver()
+	//表示支持换行的字符串
+	s := `abc"d"
+	kkkk	
+	10100100101
+	pp`
+	printFileContents(strings.NewReader(s))
+	//forver()
 
+}
+
+func printFileContents(reader io.Reader) {
+	scanner := bufio.NewScanner(reader)
+
+	for scanner.Scan() {
+		fmt.Println(scanner.Text())
+	}
 }
