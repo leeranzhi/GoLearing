@@ -2,10 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="065b8b84-9109-4da6-98c7-b11ce58dfc5c" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/functional/adder/adder.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/loop.go" beforeDir="false" afterPath="$PROJECT_DIR$/loop.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retriever/main.go" beforeDir="false" afterPath="$PROJECT_DIR$/retriever/main.go" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/retriever/mock/mockretriever.go" beforeDir="false" afterPath="$PROJECT_DIR$/retriever/mock/mockretriever.go" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -91,7 +89,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Go Build.go build learnGo (1)">
+  <component name="RunManager" selected="Go Build.go build learnGo/functional/adder">
     <configuration name="go build entry.go (1)" type="GoApplicationRunConfiguration" factoryName="Go Application" nameIsGenerated="true">
       <module name="learnGo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -134,6 +132,15 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
+    <configuration name="go build learnGo/functional/adder" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="learnGo" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <filePath value="$PROJECT_DIR$/functional/adder/adder.go" />
+      <package value="learnGo/functional/adder" />
+      <directory value="$PROJECT_DIR$" />
+      <method v="2" />
+    </configuration>
     <configuration name="go build learnGo/queue/entry" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="learnGo" />
       <working_directory value="$PROJECT_DIR$" />
@@ -152,21 +159,13 @@
       <directory value="$PROJECT_DIR$" />
       <method v="2" />
     </configuration>
-    <configuration name="go build maps.go" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="learnGo" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="FILE" />
-      <filePath value="$PROJECT_DIR$/maps.go" />
-      <directory value="$PROJECT_DIR$" />
-      <method v="2" />
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Build.go build learnGo/functional/adder" />
         <item itemvalue="Go Build.go build learnGo (1)" />
         <item itemvalue="Go Build.go build learnGo/retriever" />
         <item itemvalue="Go Build.go build learnGo/queue/entry" />
         <item itemvalue="Go Build.go build entry.go (2)" />
-        <item itemvalue="Go Build.go build maps.go" />
       </list>
     </recent_temporary>
   </component>
@@ -206,7 +205,8 @@
       <workItem from="1564502126506" duration="3733000" />
       <workItem from="1564672642630" duration="2314000" />
       <workItem from="1564932191166" duration="1964000" />
-      <workItem from="1565795598889" duration="2268000" />
+      <workItem from="1565795598889" duration="2464000" />
+      <workItem from="1566315184174" duration="1267000" />
     </task>
     <task id="LOCAL-00001" summary="添加值传递和指针方法接收的不同.">
       <created>1563898777079</created>
@@ -229,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1564679274781</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="常用的系统接口">
+      <created>1565798007163</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1565798007163</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,6 +289,7 @@
     <MESSAGE value="添加值传递和指针方法接收的不同." />
     <MESSAGE value="接口的定义与实现。" />
     <MESSAGE value="接口的值的类型" />
-    <option name="LAST_COMMIT_MESSAGE" value="接口的值的类型" />
+    <MESSAGE value="常用的系统接口" />
+    <option name="LAST_COMMIT_MESSAGE" value="常用的系统接口" />
   </component>
 </project>
